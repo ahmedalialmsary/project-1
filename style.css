@@ -1,0 +1,23 @@
+:root{
+    --nav-bg-color:#9ACBD0;
+    --nav-color:#F2EFE7;
+    --btn-bg-color:#9ACBD0;
+    --btn-color:#006A71;
+    --footer-bg-color:#006A71;
+    --footer-color:#F2EFE7;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #F2EFE7;
+    height: 100vh;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
