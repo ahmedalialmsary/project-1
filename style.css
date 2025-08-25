@@ -1,8 +1,8 @@
 :root{
     --nav-bg-color:#006A71;
     --nav-color:#F2EFE7;
-    --btn-bg-color:#9ACBD0;
-    --btn-color:#9ACBD0;
+    --btn-bg-color:#28909c;
+    --btn-color:#6aaeb5;
     --footer-bg-color:#006A71;
     --footer-color:#F2EFE7;
 }
@@ -25,10 +25,10 @@ nav{
     
 }
 #search{
-  width: 300%;                   /* خلي الحقل يملأ div بالكامل */
-  padding: 8px 12px;             /* مساحة داخلية للنص */
-  border: 1px solid #ccc;        /* حدود بسيطة */
-  border-radius: 6px;            /* حواف ناعمة */
+  width: 300%;                 
+  padding: 8px 12px;             
+  border: 1px solid #ccc;       
+  border-radius: 6px;            
   font-size: 16px; 
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ nav a:hover{
 }
 
 .container {
-  position: relative;             /* حتى نتحكم بالـ overlay */
+  position: relative;            
   height: 60vh;
   background-image: url(image/bghero.png);
   background-size: cover;
@@ -62,45 +62,162 @@ nav a:hover{
   align-items: center;
   color: white;
   text-align: center;
-  z-index: 1;                     /* النص فوق */
+  z-index: 1;      
 }
 
 .container::before {
-  content: "";                    /* عنصر وهمي */
+  content: "";                   
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); /* أسود شفاف */
-  z-index: -1;                    /* يخلي الطبقة خلف النص */
+  background-color: rgba(0,0,0,0.8);
+  z-index: -1;   
+  background-repeat: no-repeat;        
+  border-radius: 2px;        
 }
 
+.container h1{
+    font-size: 6.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--nav-color);
+}
+.container p{
+    font-size: 1.5rem;
+    color: var(--nav-color);
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin: 10px;
 
+}
+.card{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.contact-form {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  background: var(--footer-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  text-align: center;
 
+}
 
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
 
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
 
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
 
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: var(--btn-bg-color);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+.contact-form button:hover {
+  background: var(--btn-color);
+}
 
+.login {
+  max-width: 400px;
+  margin: 100px auto; 
+  padding: 25px;
+  background: var(--footer-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+.login h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: var(--nav-bg-color);
+}
 
+.login label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
 
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
 
+.login input:focus {
+  border-color: var(--nav-bg-color);
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 106, 113, 0.3);
+}
 
+.login button {
+  width: 100%;
+  padding: 12px;
+  background: var(--btn-bg-color);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-
-
-
-
-
-
-
-
-
-
+.login button:hover {
+  background: var(--btn-color);
+}
 
 
 

@@ -17,10 +17,10 @@
              <input type="search" id="search" name="search" placeholder="search">
             </div>
             <div class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Contact</a>
-                <a href="#">About</a>
-                <a href="#">Login</a>
+                <a href="index.html">Home</a>
+                <a href="index.html">Contact</a>
+                <a href="#about">About</a>
+                <a href="login.html">Login</a>
             </div>
         </nav>
     </header>
@@ -32,6 +32,41 @@
         </div>
 
     </main>
+    <br>
+    <section class="cards">
+        <div class="card">
+            <h3>Find</h3>
+            <p>find what you looking for</p>
+            <img src="image/logo.svg" alt="book logo " width="60px" height="60px"> 
+        </div>
+        <div class="card">
+            <h3>discover</h3>
+            <p>discover with 100s fo books</p>
+            <img src="image/logo.svg" alt="book logo " width="60px" height="60px"> 
+        </div>
+        <div class="card">
+            <h3>write</h3>
+            <p>write your books with us</p>
+            <img src="image/logo.svg" alt="book logo " width="60px" height="60px"> 
+        </div>
+    </section>
+    <br>
+    <section id="contact">
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <br>
     <footer>
         <p>&copy;All rights reserved</p>
