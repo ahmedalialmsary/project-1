@@ -1,8 +1,8 @@
 :root{
-    --nav-bg-color:#9ACBD0;
+    --nav-bg-color:#006A71;
     --nav-color:#F2EFE7;
     --btn-bg-color:#9ACBD0;
-    --btn-color:#006A71;
+    --btn-color:#9ACBD0;
     --footer-bg-color:#006A71;
     --footer-color:#F2EFE7;
 }
@@ -18,6 +18,100 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 8px;
+    background-color: var(--nav-bg-color);
+    gap: 10px;
+    border-radius: 8px;
+    
+}
+#search{
+  width: 300%;                   /* خلي الحقل يملأ div بالكامل */
+  padding: 8px 12px;             /* مساحة داخلية للنص */
+  border: 1px solid #ccc;        /* حدود بسيطة */
+  border-radius: 6px;            /* حواف ناعمة */
+  font-size: 16px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:-100px;
+}
+.navbar{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+nav a{
+    color: var(--nav-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color:#9ACBD0;
+}
+
+.container {
+  position: relative;             /* حتى نتحكم بالـ overlay */
+  height: 60vh;
+  background-image: url(image/bghero.png);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 1;                     /* النص فوق */
+}
+
+.container::before {
+  content: "";                    /* عنصر وهمي */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* أسود شفاف */
+  z-index: -1;                    /* يخلي الطبقة خلف النص */
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #006A71;
+    border-radius: 8px;
+    color: var(--nav-color);
+    
 }
